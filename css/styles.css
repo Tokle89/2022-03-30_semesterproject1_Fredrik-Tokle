@@ -96,7 +96,7 @@ nav a {
   display: block;
 }
 .search {
-  position: absolute;
+  position: fixed;
   top: 68px;
   right: -300px;
   border: 2px solid #000;

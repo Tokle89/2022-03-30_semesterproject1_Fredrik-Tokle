@@ -24,14 +24,16 @@
     max-width: none;
   }
   .reverse-container {
-    flex-direction: row;
+    flex-direction: row-reverse;
     max-width: 800px;
+  }
+  .reverse-container__text,
+  .color-content-container_text {
+    margin: auto;
+    text-align: left;
   }
   .t-rex_img {
     min-height: 385px;
-  }
-  .color-content-container_text {
-    margin: auto;
   }
 }
 @media (min-width: 1200px) {
