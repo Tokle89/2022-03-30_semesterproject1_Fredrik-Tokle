@@ -1,0 +1,68 @@
+@media (min-width: 800px) {
+  h1 {
+    font-size: 2.2em;
+  }
+  h2,
+  h3 {
+    font-size: 1.4em;
+  }
+  .h3,
+  p {
+    font-size: 1.12em;
+  }
+  .cta {
+    padding: 12px 35px;
+  }
+}
+@media (min-width: 900px) {
+  .color-content-container {
+    flex-direction: row;
+    max-width: none;
+  }
+  .reverse-container {
+    flex-direction: row;
+    max-width: 800px;
+  }
+  .t-rex_img {
+    min-height: 385px;
+  }
+  .color-content-container_text {
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  header label {
+    display: none;
+  }
+  nav,
+  .search {
+    display: block;
+    position: relative;
+    z-index: 1000;
+  }
+  nav {
+    top: -5px;
+  }
+  nav a {
+    display: inline;
+    padding: 0px 10px;
+  }
+  .search {
+    padding: 0;
+    border: none;
+    top: -8px;
+  }
+  .nav_flex-2 {
+    order: 0;
+  }
+  .logo {
+    order: 0;
+  }
+  .hours {
+    display: block;
+  }
+}

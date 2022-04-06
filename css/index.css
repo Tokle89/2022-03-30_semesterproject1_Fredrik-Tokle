@@ -1,0 +1,17 @@
+.virtual-reality {
+  text-align: center;
+}
+.virtual-reality p {
+  text-align: left;
+}
+.museum-info h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+.museum-info img {
+  height: 300px;
+}
+
+.museum-info .reverse-container {
+  margin-top: 30px;
+}

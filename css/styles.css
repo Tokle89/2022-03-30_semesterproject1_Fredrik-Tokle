@@ -1,0 +1,251 @@
+@import "imports/variables.css";
+@font-face {
+  font-family: "ebrima";
+  src: url(/fonts/ebrimabd.ttf) format("truetype");
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+  font-size: 1.8em;
+  margin: 5px 0px;
+}
+h2,
+h3 {
+  margin-top: 0px;
+  font-size: 1.2em;
+}
+.h3 {
+  font-weight: bold;
+}
+.h3,
+p {
+  font-size: 1em;
+}
+.p-gray {
+  color: #545454;
+}
+q {
+  font-weight: bold;
+}
+body {
+  font-family: var(--font-paragraph), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+main img {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+/* header and footer */
+header {
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 10px 15px 0px 15px;
+  flex-direction: row-reverse;
+}
+footer {
+  text-align: center;
+  border-top: 2px solid #000;
+  padding-top: 5px;
+}
+nav {
+  display: none;
+  position: fixed;
+  background-color: #fff;
+}
+nav a {
+  display: block;
+  font-family: "roboto";
+  text-decoration: none;
+  padding: 15px 35px;
+  color: #000;
+}
+nav,
+nav a {
+  animation: show-nav 0.5s forwards;
+  transition-property: all;
+  left: -300px;
+}
+@keyframes show-nav {
+  100% {
+    left: 0px;
+  }
+}
+
+#hamburger-menu,
+#search-icon,
+.search {
+  display: none;
+}
+#hamburger-menu:checked ~ nav,
+#search-icon:checked ~ .search {
+  display: block;
+}
+.search {
+  position: absolute;
+  top: 68px;
+  right: -300px;
+  border: 2px solid #000;
+  padding: 10px 5px;
+  background-color: #fff;
+  animation: show-search 0.5s forwards;
+  transition-property: all;
+}
+@keyframes show-search {
+  100% {
+    right: 0px;
+  }
+}
+.search input {
+  border: 1px solid #000;
+  padding: 5px;
+}
+.search button {
+  font-family: var(--font-heading), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 5px;
+}
+.logo {
+  order: 1;
+  margin-bottom: 0px;
+}
+.nav_flex-2 {
+  order: 2;
+}
+
+/* main*/
+.header-img {
+  width: 100%;
+  height: 30vh;
+}
+.flex-container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.main-section {
+  flex: 6;
+}
+.h1 {
+  border-bottom: 2px solid gray;
+  margin-bottom: 50px;
+}
+.hours {
+  padding: 20px;
+  display: none;
+}
+.hours-sticky {
+  position: sticky;
+  top: 1rem;
+}
+.hours-h2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  gap: 10px;
+}
+.hours-p {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.hours h3 {
+  margin-top: 20px;
+}
+
+.reverse-container {
+  margin: 30px auto;
+  gap: 50px;
+  padding: 0px 15px;
+}
+.reverse-container > * {
+  flex: 1;
+}
+
+.reverse-container img {
+  border-radius: 20px;
+}
+.reverse-container,
+.color-content-container {
+  max-width: 500px;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.color-content-container {
+  margin: auto;
+}
+.color-content-container > * {
+  flex: 1;
+}
+
+.color-content-container_text {
+  max-width: 400px;
+  text-align: center;
+  margin: 15px 15px;
+}
+.color-content-container_text p {
+  text-align: left;
+}
+.color-content-container_text .cta {
+  margin-top: 5px;
+}
+/* colors for containers*/
+.orange-container {
+  background-color: #c44f00;
+}
+
+.blue-container {
+  background-color: #0b0073;
+}
+.color-white {
+  color: #fff;
+}
+/*links*/
+.current {
+  text-decoration: underline;
+}
+.black-cta {
+  border: #000;
+  color: #000;
+}
+.color-cta {
+  border: #fff;
+  color: #fff;
+}
+.cta {
+  display: inline-block;
+  border: 2px solid;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  min-width: 125.9px;
+  text-align: center;
+  transition: all ease-in 0.5s;
+}
+.orange-cta:hover {
+  background-color: #fff;
+  color: #c44f00;
+}
+.black-cta:hover {
+  background-color: #000;
+  color: #fff;
+}
+.blue-cta:hover {
+  background-color: #fff;
+  color: #0b0073;
+}
