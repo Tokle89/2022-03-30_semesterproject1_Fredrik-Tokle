@@ -2,9 +2,22 @@
   .header-img {
     height: 55vh;
   }
+  /*explorer page */
+  .explore__info {
+    flex-direction: row;
+    max-width: 900px;
+    margin: 70px 70px;
+  }
+  .explore__info img {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 @media (min-width: 900px) {
+  .header-img {
+    height: 65vh;
+  }
   h1 {
     font-size: 2.2em;
   }
@@ -32,8 +45,24 @@
     margin: auto;
     text-align: left;
   }
+  /* homepage*/
   .t-rex_img {
     min-height: 385px;
+  }
+  /*explore page*/
+
+  .explore__info {
+    gap: 100px;
+    margin: 50px auto;
+    padding-bottom: 20px;
+  }
+  .explore__info img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+  }
+  .explore_header-img {
+    object-position: center -2em;
   }
 }
 @media (min-width: 1200px) {
@@ -70,5 +99,12 @@
   }
   .hours {
     display: block;
+  }
+  .main-section {
+    padding: 0;
+  }
+  /*explore page */
+  .explore__info {
+    margin: 50px 0px;
   }
 }
