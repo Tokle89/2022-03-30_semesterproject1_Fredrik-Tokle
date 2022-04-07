@@ -85,7 +85,6 @@ nav a {
     left: 0px;
   }
 }
-
 #hamburger-menu,
 #search-icon,
 .search {
@@ -169,7 +168,7 @@ nav a {
 }
 
 .reverse-container {
-  margin: 30px auto;
+  margin: 70px auto;
   gap: 50px;
   padding: 0px 15px;
 }
@@ -197,6 +196,7 @@ nav a {
   max-width: 400px;
   text-align: center;
   margin: 15px 15px;
+  padding-bottom: 10px;
 }
 .color-content-container_text p {
   text-align: left;
