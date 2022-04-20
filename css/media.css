@@ -2,6 +2,9 @@
   .header-img {
     height: 55vh;
   }
+  .white-container img {
+    width: 500px;
+  }
   /*explorer page */
   .explore__info {
     flex-direction: row;
@@ -32,23 +35,44 @@
   .cta {
     padding: 12px 35px;
   }
-  .color-content-container {
+
+  .content-container,
+  .white-container {
     flex-direction: row;
     max-width: none;
+    min-height: 385px;
   }
   .reverse-container {
     flex-direction: row-reverse;
     max-width: 800px;
   }
+  .white-container {
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 50px 0px;
+    border: none;
+  }
+  .white-container_text {
+    margin: 0px;
+  }
   .reverse-container__text,
-  .color-content-container_text {
-    margin: auto;
+  .content-container_text,
+  .white-container_text {
     text-align: left;
   }
-  /* homepage*/
-  .t-rex_img {
-    min-height: 385px;
+  .reverse-container__text,
+  .content-container_text {
+    margin: auto;
   }
+  .white-container_text .cta {
+    align-self: flex-start;
+    margin: 20px 0px 0px 0px;
+  }
+  .content-container img,
+  .white-container img {
+    height: 385px;
+  }
+
   /*explore page*/
 
   .explore__info {
@@ -61,14 +85,28 @@
     width: 400px;
     height: 400px;
   }
-  .explore_header-img {
-    object-position: center -2em;
+  .explore_reverse-container__text {
+    text-align: left;
+  }
+  /* exibithion page */
+  .border-radious_exibithion_img {
+    border-radius: 16px;
+  }
+  /* special events page */
+  #aeronautics {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 50px 25px 50px 0px;
+  }
+  .events_footer {
+    margin-top: 0;
   }
 }
 @media (min-width: 1200px) {
   header {
     flex-direction: row;
     align-items: baseline;
+    justify-content: space-between;
   }
   header label {
     display: none;
@@ -78,9 +116,11 @@
     display: block;
     position: relative;
     z-index: 1000;
+    animation: none;
   }
   nav {
     top: -5px;
+    left: 0px;
   }
   nav a {
     display: inline;
@@ -90,18 +130,25 @@
     padding: 0;
     border: none;
     top: -8px;
+    right: 0;
   }
-  .nav_flex-2 {
-    order: 0;
-  }
-  .logo {
-    order: 0;
+
+  .search {
+    order: 3;
   }
   .hours {
     display: block;
   }
-  .main-section {
-    padding: 0;
+  .content-container,
+  .white-container {
+    margin-right: 25px;
+  }
+
+  .white-container {
+    justify-content: space-between;
+  }
+  .div_container_img {
+    width: 490px;
   }
   /*explore page */
   .explore__info {

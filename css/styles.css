@@ -140,7 +140,12 @@ nav a {
 }
 .main-section {
   flex: 6;
+  padding: 0 15px;
 }
+.top-container {
+  margin-top: 50px;
+}
+
 .h1 {
   border-bottom: 2px solid gray;
   margin-bottom: 50px;
@@ -166,44 +171,6 @@ nav a {
 .hours h3 {
   margin-top: 20px;
 }
-
-.reverse-container {
-  margin: 70px auto;
-  gap: 50px;
-  padding: 0px 15px;
-}
-.reverse-container > * {
-  flex: 1;
-}
-
-.reverse-container img {
-  border-radius: 20px;
-}
-.reverse-container,
-.color-content-container {
-  max-width: 500px;
-  align-items: center;
-  flex-direction: column-reverse;
-}
-.color-content-container {
-  margin: auto;
-}
-.color-content-container > * {
-  flex: 1;
-}
-
-.color-content-container_text {
-  max-width: 400px;
-  text-align: center;
-  margin: 15px 15px;
-  padding-bottom: 10px;
-}
-.color-content-container_text p {
-  text-align: left;
-}
-.color-content-container_text .cta {
-  margin-top: 5px;
-}
 /* colors for containers*/
 .orange-container {
   background-color: #c44f00;
@@ -212,9 +179,75 @@ nav a {
 .blue-container {
   background-color: #0b0073;
 }
+.green-container {
+  background-color: #008297;
+}
 .color-white {
   color: #fff;
 }
+
+/* containers */
+
+.reverse-container {
+  gap: 50px;
+  padding: 0px 15px;
+}
+.white-container {
+  border: 2px solid black;
+}
+.white-container,
+.reverse-container {
+  margin: 70px auto;
+}
+
+.content-container > *,
+.reverse-container > * {
+  flex: 1;
+}
+.content-container,
+.white-container {
+  min-height: 660px;
+  justify-content: space-between;
+}
+.content-container img,
+.white-container img {
+  height: 330px;
+}
+
+.reverse-container img {
+  border-radius: 20px;
+}
+
+.white-container,
+.reverse-container,
+.content-container {
+  max-width: 500px;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.content-container {
+  margin: auto;
+}
+
+.content-container_text,
+.white-container_text {
+  max-width: 430px;
+  text-align: center;
+  margin: 15px 15px;
+  padding-bottom: 10px;
+}
+.content-container_text p,
+.reverse-container p,
+.white-container p {
+  text-align: left;
+  margin: 25px 0px;
+}
+
+.content-container_text .cta {
+  margin-top: 5px;
+}
+
 /*links*/
 .current {
   text-decoration: underline;
@@ -237,8 +270,10 @@ nav a {
   text-align: center;
   transition: all ease-in 0.5s;
 }
-.orange-cta:hover {
+.cta:hover {
   background-color: #fff;
+}
+.orange-cta:hover {
   color: #c44f00;
 }
 .black-cta:hover {
@@ -246,6 +281,62 @@ nav a {
   color: #fff;
 }
 .blue-cta:hover {
-  background-color: #fff;
   color: #0b0073;
+}
+.green-cta:hover {
+  color: #008297;
+}
+
+/* home page */
+.virtual-reality {
+  text-align: center;
+}
+.virtual-reality p {
+  text-align: left;
+}
+.museum-info h2 {
+  text-align: center;
+  margin-top: 70px;
+}
+.museum-info img {
+  height: 300px;
+}
+
+.museum-info .reverse-container {
+  margin-top: 30px;
+}
+
+/* explore page */
+.explore__info {
+  flex-direction: column-reverse;
+  max-width: 400px;
+  gap: 20px;
+  margin: 50px auto;
+}
+.explore__info > * {
+  flex: 1;
+  margin: auto;
+}
+.explore__info img {
+  border-radius: 10px;
+  height: 350px;
+  width: 247px;
+}
+
+.explore__info p {
+  text-align: left;
+  margin: 30px 0px;
+}
+.explore_reverse-container__text {
+  text-align: center;
+}
+
+/* Special events page */
+#aeronautics {
+  flex-direction: column-reverse;
+  border: 2px solid #000;
+  margin: 50px auto;
+}
+.events_section {
+  margin-bottom: 50px;
 }
