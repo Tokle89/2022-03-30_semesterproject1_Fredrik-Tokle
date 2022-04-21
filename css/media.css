@@ -15,6 +15,16 @@
     width: 350px;
     height: 350px;
   }
+  /* visit-page */
+  .hours-h2 {
+    justify-content: center;
+  }
+  .visit_hours-p {
+    justify-content: center;
+  }
+  .visit_hours-sticky h3 {
+    text-align: center;
+  }
 }
 
 @media (min-width: 900px) {
@@ -139,6 +149,9 @@
   .hours {
     display: block;
   }
+  .main-section {
+    padding: 0px;
+  }
   .content-container,
   .white-container {
     margin-right: 25px;
@@ -153,5 +166,18 @@
   /*explore page */
   .explore__info {
     margin: 50px 0px;
+  }
+  /* visit page */
+  .visit_flex-container {
+    flex-direction: row;
+  }
+  .hours-h2 {
+    justify-content: left;
+  }
+  .visit_hours-p {
+    display: block;
+  }
+  .visit_hours-sticky h3 {
+    text-align: left;
   }
 }
