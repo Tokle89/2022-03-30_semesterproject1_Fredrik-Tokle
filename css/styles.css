@@ -1,8 +1,5 @@
 @import "imports/variables.css";
-@font-face {
-  font-family: "ebrima";
-  src: url(/fonts/ebrimabd.ttf) format("truetype");
-}
+@import "imports/links.css";
 
 h1,
 h2,
@@ -53,26 +50,26 @@ main img {
 header {
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--quinary-color);
   padding: 10px 15px 0px 15px;
   flex-direction: row-reverse;
 }
 footer {
   text-align: center;
-  border-top: 2px solid #000;
+  border-top: 2px solid var(--quinary-color);
   padding-top: 5px;
 }
 nav {
   display: none;
   position: fixed;
-  background-color: #fff;
+  background-color: var(--quaternary-color);
 }
 nav a {
   display: block;
   font-family: "roboto";
   text-decoration: none;
   padding: 15px 35px;
-  color: #000;
+  color: var(--quinary-color);
 }
 nav,
 nav a {
@@ -94,13 +91,26 @@ nav a {
 #search-icon:checked ~ .search {
   display: block;
 }
+.search,
+.search button {
+  background-color: var(--quaternary-color);
+}
+.search,
+.search button,
+.search input {
+  border: solid var(--quinary-color);
+}
+.search input,
+.search button {
+  border: 1px solid;
+  padding: 5px;
+}
 .search {
   position: fixed;
   top: 68px;
   right: -300px;
-  border: 2px solid #000;
+  border: 2px solid;
   padding: 10px 5px;
-  background-color: #fff;
   animation: show-search 0.5s forwards;
   transition-property: all;
 }
@@ -109,17 +119,11 @@ nav a {
     right: 0px;
   }
 }
-.search input {
-  border: 1px solid #000;
-  padding: 5px;
-}
+
 .search button {
   font-family: var(--font-heading), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: capitalize;
-  color: #000;
-  background-color: #fff;
-  border: 1px solid #000;
-  padding: 5px;
+  color: var(--quinary-color);
 }
 .logo {
   order: 1;
@@ -171,18 +175,18 @@ nav a {
   margin-top: 20px;
 }
 /* colors for containers*/
-.orange-container {
-  background-color: #c44f00;
+.primary-color_container {
+  background-color: var(--primary-color);
 }
 
-.blue-container {
-  background-color: #0b0073;
+.secondary-color_container {
+  background-color: var(--secondary-color);
 }
-.green-container {
-  background-color: #008297;
+.tertiary-color_container {
+  background-color: var(--tertiary-color);
 }
-.color-white {
-  color: #fff;
+.quaternary-color {
+  color: var(--quaternary-color);
 }
 
 /* containers */
@@ -192,7 +196,7 @@ nav a {
   padding: 0px 15px;
 }
 .white-container {
-  border: 2px solid black;
+  border: 2px solid var(--quinary-color);
 }
 .white-container,
 .reverse-container {
@@ -247,45 +251,6 @@ nav a {
   margin-top: 5px;
 }
 
-/*links*/
-.current {
-  text-decoration: underline;
-}
-.black-cta {
-  border: #000;
-  color: #000;
-}
-.color-cta {
-  border: #fff;
-  color: #fff;
-}
-.cta {
-  display: inline-block;
-  border: 2px solid;
-  padding: 8px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  min-width: 125.9px;
-  text-align: center;
-  transition: all ease-in 0.5s;
-}
-.cta:hover {
-  background-color: #fff;
-}
-.orange-cta:hover {
-  color: #c44f00;
-}
-.black-cta:hover {
-  background-color: #000;
-  color: #fff;
-}
-.blue-cta:hover {
-  color: #0b0073;
-}
-.green-cta:hover {
-  color: #008297;
-}
-
 /* home page */
 .virtual-reality {
   text-align: center;
@@ -333,7 +298,7 @@ nav a {
 /* Special events page */
 #aeronautics {
   flex-direction: column-reverse;
-  border: 2px solid #000;
+  border: 2px solid var(--quinary-color);
   margin: 50px auto;
 }
 .events_section {
@@ -347,7 +312,7 @@ nav a {
   margin-bottom: 100px;
 }
 .visit_info-text {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--quinary-color);
   margin-bottom: 20px;
 }
 .visit_info-text p {

@@ -1,4 +1,13 @@
 :root {
   --font-heading: "embrima";
   --font-paragraph: "roboto";
+  --primary-color: #c44f00;
+  --secondary-color: #0b0073;
+  --tertiary-color: #008297;
+  --quaternary-color: #fff;
+  --quinary-color: #000;
+}
+@font-face {
+  font-family: "ebrima";
+  src: url(/fonts/ebrimabd.ttf) format("truetype");
 }

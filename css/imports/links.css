@@ -1,0 +1,37 @@
+.current {
+  text-decoration: underline;
+}
+.quinary-color_cta {
+  border: var(--quinary-color);
+  color: var(--quinary-color);
+}
+.color-cta {
+  border: var(--quaternary-color);
+  color: var(--quaternary-color);
+}
+.cta {
+  display: inline-block;
+  border: 2px solid;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  min-width: 125.9px;
+  text-align: center;
+  transition: all ease-in 0.5s;
+}
+.cta:hover {
+  background-color: var(--quaternary-color);
+}
+.primary-color_cta:hover {
+  color: var(--primary-color);
+}
+.secondary-color_cta:hover {
+  color: var(--secondary-color);
+}
+.quinary-color_cta:hover {
+  background-color: var(--quinary-color);
+  color: var(--quaternary-color);
+}
+.tertiary-color_cta:hover {
+  color: var(--tertiary-color);
+}
