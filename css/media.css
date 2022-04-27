@@ -1,9 +1,20 @@
 @media (min-width: 600px) {
+  h1 {
+    text-align: center;
+  }
   .header-img {
     height: 55vh;
   }
-  .white-container img {
+  .content-container img {
     width: 500px;
+  }
+  .smaller-content-container__text {
+    text-align: left;
+  }
+  .content-container,
+  .smaller-content-container,
+  .color-content-container {
+    max-width: 500px;
   }
   /*explorer page */
   .explore__info {
@@ -16,6 +27,9 @@
     height: 350px;
   }
   /* visit-page */
+  .visit-info {
+    flex-direction: row;
+  }
   .hours-h2 {
     justify-content: center;
   }
@@ -25,6 +39,16 @@
   .visit_hours-sticky h3 {
     text-align: center;
   }
+  /* get involved page */
+  #involved-container {
+    flex-direction: row;
+  }
+  .internship-container {
+    border: 2px solid var(--quinary-color);
+  }
+  .involved_reversed-container_img {
+    min-height: 300px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -33,53 +57,57 @@
   }
   h1 {
     font-size: 2.2em;
+    text-align: left;
   }
   h2,
   h3 {
     font-size: 1.4em;
   }
-  .h3,
-  p {
+  p,
+  .p-sized-h {
     font-size: 1.12em;
   }
   .cta {
     padding: 12px 35px;
   }
 
-  .content-container,
-  .white-container {
+  .color-content-container,
+  .content-container {
     flex-direction: row;
     max-width: none;
     min-height: 385px;
   }
-  .reverse-container {
+  .smaller-content-container {
     flex-direction: row-reverse;
     max-width: 800px;
   }
-  .white-container {
+  .content-container {
     justify-content: space-evenly;
     gap: 50px;
     margin: 50px 0px;
     border: none;
   }
-  .white-container_text {
+  .content-container_text {
     margin: 0px;
   }
-  .reverse-container__text,
-  .content-container_text,
-  .white-container_text {
+  .smaller-content-container__text,
+  .color-content-container_text,
+  .content-container_text {
     text-align: left;
   }
-  .reverse-container__text,
-  .content-container_text {
+  .smaller-content-container__text,
+  .color-content-container_text {
     margin: auto;
   }
-  .white-container_text .cta {
+  .color-content-container_text {
+    padding: 0px 10px;
+  }
+  .content-container_text .cta {
     align-self: flex-start;
     margin: 20px 0px 0px 0px;
   }
-  .content-container img,
-  .white-container img {
+  .color-content-container img,
+  .content-container img {
     height: 385px;
   }
 
@@ -95,9 +123,6 @@
     width: 400px;
     height: 400px;
   }
-  .explore_reverse-container__text {
-    text-align: left;
-  }
   /* exibithion page */
   .border-radious_exibithion_img {
     border-radius: 16px;
@@ -110,6 +135,33 @@
   }
   .events_footer {
     margin-top: 0;
+  }
+  /* vist page */
+  .visit_flex-container {
+    flex-direction: row;
+  }
+  .hours-h2 {
+    justify-content: left;
+  }
+  .visit_hours-p {
+    display: block;
+  }
+  .visit_hours-sticky h3 {
+    text-align: left;
+  }
+  /* contact-page */
+  .contact-info_container {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .contact-hours {
+    display: block;
+  }
+  .contact-form button {
+    max-width: 196px;
+  }
+  .contact-message {
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1200px) {
@@ -152,12 +204,12 @@
   .main-section {
     padding: 0px;
   }
-  .content-container,
-  .white-container {
+  .color-content-container,
+  .content-container {
     margin-right: 25px;
   }
 
-  .white-container {
+  .content-container {
     justify-content: space-between;
   }
   .div_container_img {
@@ -168,16 +220,10 @@
     margin: 50px 0px;
   }
   /* visit page */
-  .visit_flex-container {
-    flex-direction: row;
+  .visit_main-section {
+    margin: 0px 20px;
   }
-  .hours-h2 {
-    justify-content: left;
-  }
-  .visit_hours-p {
-    display: block;
-  }
-  .visit_hours-sticky h3 {
-    text-align: left;
+  .visit-info {
+    padding: 50px 50px 50px 0px;
   }
 }

@@ -1,0 +1,34 @@
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  font-family: var(--font-paragraph), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  font-size: 1.6em;
+  margin: 10px 0px;
+}
+h2,
+h3 {
+  margin-top: 0px;
+  font-size: 1.2em;
+}
+.p-sized-h {
+  font-weight: bold;
+}
+.p-sized-h,
+p {
+  font-size: 1em;
+}
+.p-gray {
+  color: #545454;
+}
+q {
+  font-weight: bold;
+}
+.h1 {
+  border-bottom: 2px solid black;
+  margin-bottom: 50px;
+}

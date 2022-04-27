@@ -1,35 +1,8 @@
 @import "imports/variables.css";
 @import "imports/links.css";
+@import "imports/typography.css";
 
-h1,
-h2,
-h3 {
-  font-family: var(--font-heading), Verdana, Geneva, Tahoma, sans-serif;
-}
-h1 {
-  font-size: 1.8em;
-  margin: 5px 0px;
-}
-h2,
-h3 {
-  margin-top: 0px;
-  font-size: 1.2em;
-}
-.h3 {
-  font-weight: bold;
-}
-.h3,
-p {
-  font-size: 1em;
-}
-.p-gray {
-  color: #545454;
-}
-q {
-  font-weight: bold;
-}
 body {
-  font-family: var(--font-paragraph), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   min-height: 100vh;
   display: grid;
@@ -72,11 +45,18 @@ nav a {
   color: var(--quinary-color);
 }
 nav,
-nav a {
-  animation: show-nav 0.5s forwards;
+nav a,
+.search,
+.search button {
+  animation: 0.5s forwards;
   transition-property: all;
+}
+nav,
+nav a {
+  animation-name: show-nav;
   left: -300px;
 }
+
 @keyframes show-nav {
   100% {
     left: 0px;
@@ -96,7 +76,6 @@ nav a {
   background-color: var(--quaternary-color);
 }
 .search,
-.search button,
 .search input {
   border: solid var(--quinary-color);
 }
@@ -111,8 +90,7 @@ nav a {
   right: -300px;
   border: 2px solid;
   padding: 10px 5px;
-  animation: show-search 0.5s forwards;
-  transition-property: all;
+  animation-name: show-search;
 }
 @keyframes show-search {
   100% {
@@ -123,7 +101,17 @@ nav a {
 .search button {
   font-family: var(--font-heading), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: capitalize;
-  color: var(--quinary-color);
+  color: var(--quaternary-color);
+  background-color: var(--quinary-color);
+}
+.search button:hover {
+  animation-name: search;
+}
+@keyframes search {
+  100% {
+    color: var(--quinary-color);
+    background-color: var(--quaternary-color);
+  }
 }
 .logo {
   order: 1;
@@ -141,6 +129,7 @@ nav a {
 .flex-container {
   max-width: 1250px;
   margin: 0 auto;
+  padding: 0px 15px;
 }
 .main-section {
   flex: 6;
@@ -148,11 +137,6 @@ nav a {
 }
 .top-container {
   margin-top: 50px;
-}
-
-.h1 {
-  border-bottom: 2px solid gray;
-  margin-bottom: 50px;
 }
 .hours {
   padding: 20px;
@@ -185,69 +169,76 @@ nav a {
 .tertiary-color_container {
   background-color: var(--tertiary-color);
 }
+.quinary-color_container {
+  background-color: var(--quinary-color);
+}
 .quaternary-color {
   color: var(--quaternary-color);
 }
 
 /* containers */
 
-.reverse-container {
+.smaller-content-container {
   gap: 50px;
   padding: 0px 15px;
 }
-.white-container {
+.content-container {
   border: 2px solid var(--quinary-color);
 }
-.white-container,
-.reverse-container {
+.content-container,
+.smaller-content-container {
   margin: 70px auto;
 }
 
-.content-container > *,
-.reverse-container > * {
+.color-content-container > *,
+.smaller-content-container > *,
+.content-container > * {
   flex: 1;
 }
-.content-container,
-.white-container {
+.color-content-container,
+.content-container {
   min-height: 660px;
   justify-content: space-between;
 }
-.content-container img,
-.white-container img {
+.color-content-container img,
+.content-container img {
   height: 330px;
 }
 
-.reverse-container img {
+.smaller-content-container img {
   border-radius: 20px;
 }
 
-.white-container,
-.reverse-container,
-.content-container {
-  max-width: 500px;
+.content-container,
+.smaller-content-container,
+.color-content-container {
+  max-width: 430px;
   align-items: center;
   flex-direction: column-reverse;
 }
 
-.content-container {
+.color-content-container {
   margin: auto;
 }
 
-.content-container_text,
-.white-container_text {
+.color-content-container_text,
+.content-container_text {
   max-width: 430px;
   text-align: center;
   margin: 15px 15px;
   padding-bottom: 10px;
 }
-.content-container_text p,
-.reverse-container p,
-.white-container p {
+.smaller-content-container__text {
+  text-align: center;
+}
+.color-content-container_text p,
+.smaller-content-container p,
+.content-container p {
   text-align: left;
   margin: 25px 0px;
 }
 
-.content-container_text .cta {
+.color-content-container_text .cta {
   margin-top: 5px;
 }
 
@@ -266,7 +257,7 @@ nav a {
   height: 300px;
 }
 
-.museum-info .reverse-container {
+.museum-info .smaller-content-container {
   margin-top: 30px;
 }
 
@@ -291,9 +282,6 @@ nav a {
   text-align: left;
   margin: 30px 0px;
 }
-.explore_reverse-container__text {
-  text-align: center;
-}
 
 /* Special events page */
 #aeronautics {
@@ -308,26 +296,83 @@ nav a {
   object-position: center -2em;
 }
 /* visit page */
-.visit_main-section {
-  margin-bottom: 100px;
+.visit-h1 {
+  margin-bottom: 0px;
 }
-.visit_info-text {
+.visit-info {
+  flex-direction: column;
   border-bottom: 1px solid var(--quinary-color);
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  padding: 50px 20px;
+  gap: 30px;
+}
+.visit-info > * {
+  flex: 1;
 }
 .visit_info-text p {
   margin-top: 0px;
 }
 .visit_info-text h2 {
   margin-bottom: 10px;
+  text-decoration: underline;
 }
 .visit_flex-container {
   flex-direction: column-reverse;
 }
+.visit_bottom-container {
+  border-bottom: none;
+}
 .visit-hours {
   display: block;
 }
-
 .visit_hours-p {
   gap: 30px;
+}
+/* get involved page */
+.involved-h1 p {
+  margin: 2px;
+}
+/* contant us page */
+.contact-us_h1 {
+  margin-bottom: 20px;
+}
+.contact-info_container {
+  flex-direction: column;
+}
+.contact-info {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  /* border-bottom: 2px solid var(--quinary-color); */
+  max-width: 400px;
+}
+.contact-message {
+  margin: 20px 0px;
+}
+
+.contact-i {
+  font-size: 1.5em;
+}
+.mail-i {
+  padding-top: 2px;
+}
+.contact-form {
+  border: solid 2px var(--quinary-color);
+  padding: 40px 15px;
+  flex-direction: column;
+  max-width: 700px;
+}
+textarea {
+  height: 183px;
+}
+.contact-form input,
+textarea {
+  margin-bottom: 20px;
+  padding: 10px 0px;
+}
+.contact-form button {
+  display: block;
+  max-width: 166px;
+  background-color: #fff;
 }
