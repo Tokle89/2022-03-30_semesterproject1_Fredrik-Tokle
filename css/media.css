@@ -26,6 +26,10 @@
     width: 350px;
     height: 350px;
   }
+  /* events page */
+  #aeronautics img {
+    min-width: 500px;
+  }
   /* visit-page */
   .visit-info {
     flex-direction: row;
@@ -131,7 +135,9 @@
   #aeronautics {
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin: 50px 25px 50px 0px;
+  }
+  #aeronautics img {
+    min-width: 400px;
   }
   .events_footer {
     margin-top: 0;
@@ -218,6 +224,9 @@
   /*explore page */
   .explore__info {
     margin: 50px 0px;
+  }
+  #aeronautics {
+    margin: 50px 25px 50px 0px;
   }
   /* visit page */
   .visit_main-section {
