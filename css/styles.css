@@ -97,6 +97,7 @@ nav a {
   border: 2px solid;
   padding: 10px 5px;
   animation-name: show-search;
+  z-index: 1000;
 }
 @keyframes show-search {
   100% {
