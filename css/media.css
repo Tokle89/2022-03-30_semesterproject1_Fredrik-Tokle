@@ -151,9 +151,7 @@
   #aeronautics img {
     min-width: 400px;
   }
-  .events_footer {
-    margin-top: 0;
-  }
+
   /* vist page */
   .visit_flex-container {
     flex-direction: row;
