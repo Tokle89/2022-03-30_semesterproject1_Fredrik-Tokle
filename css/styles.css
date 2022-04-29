@@ -38,6 +38,7 @@ nav {
   display: none;
   position: fixed;
   background-color: var(--quaternary-color);
+  z-index: 1001;
 }
 nav a {
   display: block;
@@ -127,9 +128,26 @@ nav a {
 }
 
 /* main*/
+.header-img_container {
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+}
 .header-img {
   width: 100%;
   height: 30vh;
+  animation: zoom 10s ease infinite;
+}
+@keyframes zoom {
+  0% {
+    transform: scale (1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .flex-container {
   max-width: 1250px;
@@ -289,9 +307,6 @@ nav a {
 .events_section {
   margin-bottom: 50px;
 }
-.dinosaur_img {
-  object-position: center -2em;
-}
 /* visit page */
 .visit-h1 {
   margin-bottom: 0px;
@@ -315,6 +330,7 @@ nav a {
 }
 .visit_flex-container {
   flex-direction: column-reverse;
+  padding: 0;
 }
 .visit_bottom-container {
   border-bottom: none;

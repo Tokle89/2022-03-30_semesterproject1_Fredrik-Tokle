@@ -2,8 +2,9 @@
   h1 {
     text-align: center;
   }
+  .header-img_container,
   .header-img {
-    height: 55vh;
+    height: 40vh;
   }
   .content-container img {
     width: 500px;
@@ -17,6 +18,10 @@
     max-width: 500px;
   }
   /*explorer page */
+  .involved_header-p {
+    margin: auto;
+    max-width: 70%;
+  }
   .explore__info {
     flex-direction: row;
     max-width: 900px;
@@ -56,6 +61,7 @@
 }
 
 @media (min-width: 900px) {
+  .header-img_container,
   .header-img {
     height: 65vh;
   }
@@ -114,8 +120,14 @@
   .content-container img {
     height: 385px;
   }
+  .contact_involved_hours {
+    display: block;
+  }
 
   /*explore page*/
+  .involved_header-p {
+    max-width: 100%;
+  }
 
   .explore__info {
     gap: 100px;
@@ -159,9 +171,6 @@
   .contact-info_container {
     flex-direction: row;
     gap: 50px;
-  }
-  .contact-hours {
-    display: block;
   }
   .contact-form button {
     max-width: 196px;
@@ -221,6 +230,10 @@
   .div_container_img {
     width: 490px;
   }
+  /* special event page */
+  .dinosaur_img {
+    object-position: center -2em;
+  }
   /*explore page */
   .explore__info {
     margin: 50px 0px;
@@ -229,6 +242,9 @@
     margin: 50px 25px 50px 0px;
   }
   /* visit page */
+  .visit_header-img_object {
+    object-position: center;
+  }
   .visit_main-section {
     margin: 0px 20px;
   }
