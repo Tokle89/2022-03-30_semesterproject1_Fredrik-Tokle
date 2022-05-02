@@ -138,6 +138,7 @@ nav a {
   width: 100%;
   height: 30vh;
   animation: zoom 10s ease infinite;
+  object-fit: center;
 }
 @keyframes zoom {
   0% {
@@ -262,6 +263,9 @@ nav a {
 }
 
 /* home page */
+.index_header-img {
+  object-position: left;
+}
 .virtual-reality p {
   text-align: left;
 }
@@ -300,13 +304,13 @@ nav a {
 }
 
 /* Special events page */
-#aeronautics {
+.events_section {
+  margin-bottom: 50px;
+}
+.events_section .aeronautics {
   flex-direction: column-reverse;
   border: 2px solid var(--quinary-color);
   margin: 50px auto;
-}
-.events_section {
-  margin-bottom: 50px;
 }
 /* visit page */
 .visit-h1 {
@@ -339,9 +343,13 @@ nav a {
 .visit-hours {
   display: block;
 }
+.visit-hours h2 {
+  padding-top: 4px;
+}
 .visit_hours-p {
   gap: 30px;
 }
+
 /* get involved page */
 .involved-h1 p {
   margin: 2px;
