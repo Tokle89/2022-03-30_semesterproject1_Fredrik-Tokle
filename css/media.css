@@ -17,6 +17,10 @@
   .color-content-container {
     max-width: 500px;
   }
+  /* home page */
+  .virtual-reality .smaller-content-container__text {
+    text-align: center;
+  }
   /*explorer page */
   .involved_header-p {
     margin: auto;
