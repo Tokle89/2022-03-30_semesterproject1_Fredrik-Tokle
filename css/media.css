@@ -43,14 +43,10 @@
   .visit-info {
     flex-direction: row;
   }
-  .hours-h2 {
-    justify-content: center;
-  }
-  .visit_hours-p {
-    justify-content: center;
-  }
+  .hours-h2,
+  .visit_hours-p,
   .visit_hours-sticky h3 {
-    text-align: center;
+    justify-content: center;
   }
   /* get involved page */
   .involved_main-section .involved-container {
@@ -143,8 +139,8 @@
     width: 400px;
     height: 400px;
   }
-  /* exibithion page */
-  .border-radious_exibithion_img {
+  /* exhibition page */
+  .border-radius_exhibition_img {
     border-radius: 16px;
   }
   /* special events page */
@@ -156,7 +152,7 @@
     min-width: 400px;
   }
 
-  /* vist page */
+  /* visit page */
   .visit_flex-container {
     flex-direction: row;
   }
@@ -188,14 +184,21 @@
   header {
     flex-direction: row;
     align-items: baseline;
+  }
+  header,
+  .content-container {
     justify-content: space-between;
   }
   header label {
     display: none;
   }
   nav,
-  .search {
+  .search,
+  .hours {
     display: block;
+  }
+  nav,
+  .search {
     position: relative;
     z-index: 1000;
     animation: none;
@@ -218,19 +221,12 @@
   .search {
     order: 3;
   }
-  .hours {
-    display: block;
-  }
   .main-section {
     padding: 0px;
   }
   .color-content-container,
   .content-container {
     margin-right: 25px;
-  }
-
-  .content-container {
-    justify-content: space-between;
   }
   .div_container_img {
     width: 490px;

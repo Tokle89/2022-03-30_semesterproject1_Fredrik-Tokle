@@ -130,14 +130,15 @@ nav a {
 }
 
 /* main*/
-.header-img_container {
+.header-img_container,
+.header-img {
   height: 30vh;
   width: 100%;
+}
+.header-img_container {
   overflow: hidden;
 }
 .header-img {
-  width: 100%;
-  height: 30vh;
   animation: zoom 15s ease infinite;
 }
 @keyframes zoom {
@@ -151,14 +152,16 @@ nav a {
     transform: scale(1);
   }
 }
+.flex-container,
+.main-section {
+  padding: 0px 15px;
+}
 .flex-container {
   max-width: 1250px;
   margin: auto;
-  padding: 0px 15px;
 }
 .main-section {
   flex: 6;
-  padding: 0px 15px;
 }
 .top-container {
   margin-top: 50px;
