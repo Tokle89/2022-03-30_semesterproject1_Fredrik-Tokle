@@ -106,8 +106,7 @@ nav a {
 }
 
 .search button {
-  font-family: var(--font-heading), "Segoe UI", Tahoma, Geneva, Verdana,
-    sans-serif;
+  font-family: var(--font-heading), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: capitalize;
   color: var(--quaternary-color);
   background-color: var(--quinary-color);
@@ -139,7 +138,7 @@ nav a {
   overflow: hidden;
 }
 .header-img {
-  animation: zoom 15s ease infinite;
+  animation: zoom 25s ease infinite;
 }
 @keyframes zoom {
   0% {
