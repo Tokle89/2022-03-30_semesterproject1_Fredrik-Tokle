@@ -1,6 +1,7 @@
 # Semester Project 1
 
 Create a website for a science museum.
+![CommunityScienceMuseum](https://github.com/Tokle89/2022-03-30_semesterproject1_Fredrik-Tokle/assets/94007467/77b1931f-128b-4997-aa6c-0ca1cb62039e)
 
 ## Description
 
