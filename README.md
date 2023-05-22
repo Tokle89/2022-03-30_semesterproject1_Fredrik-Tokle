@@ -1,45 +1,38 @@
-# Rainy Days
+# Semester Project 1
 
-Created a web application for a web shop called Rainy Days in my cross course project in school.
+Create a website for a science museum.
 
 ## Description
 
-Was tasked with designing and creating a website called Rainy Days. A online shop selling rain jackets.
-The website is created on Html, Css and Javascript.
-
-The user has to be able maneuver the site easily. Be able to add products to the shopping cart, and complete the purchase.
-
-After the user have completed the purchase he will be taken to a purchase complete page, where he is given a receipt and a message that the purchase was complete.
+Created a website for a science museum called the Community Science Museum.
+The core target audience is middle school children.
+The website had to be informative and engaging and should encourage the audience to visit the museum them self.
+The website also had to be responsive and easy to use on a variety of devices.
+The task is to build the site using only Html and css
 
 Site architecture:
 
 - Home page
-- Collection page (page with the list og products)
-- Details page ( showing the specific jacket the user clicked on)
-- Checkout page
-- A checkout success page
-- About page
-- Contact page
-
-The products are created in a Wordpress headless cms
+- Contact Page
+- Events page
+- Exhibition page
+- Explore page
+- Involved page ( info on how to get involved with the museum)
+- Visit us page
 
 ## Built With
 
 - Html
 - Css
-- javascript
-- Wordpress Headless Cms
 
 ## Getting Started
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
 1. Clone the repo:
 
 ```bash
-git clone git@github.com: Tokle89/cross-course-project-Tokle89.git
+git clone https://github.com/Tokle89/2022-03-30_semesterproject1_Fredrik-Tokle
 ```
 
 ### Running
@@ -55,7 +48,5 @@ npm run start
 If you would like to contribute to my project - Just make a pull request and push your changes
 
 ## Contact
-
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
 [My LinkedIn page](https://www.linkedin.com/in/fredrik-tokle-0994a023b/)
